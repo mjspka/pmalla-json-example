@@ -1,0 +1,139 @@
+{
+    "phase": "Phase 1",
+    "source": "University of Colorado, Denver",
+    "id_info": {
+        "nct_id": "NCT02114333",
+        "org_study_id": "13-3192"
+    },
+    "keyword": ["Shingles vaccine", "Immune response", "Zoster vaccine"],
+    "location": {
+        "status": "Recruiting",
+        "contact": {
+            "email": "nancy.lang@ucdenver.edu",
+            "phone": "303-724-2454",
+            "last_name": "Nancy Lang, BSN"
+        },
+        "facility": {
+            "name": "Pediatric Infectious Diseases and Clinical Trials, Universtiy of Colorado School of Medicine ",
+            "address": {
+                "zip": "80045 ",
+                "city": "Aurora ",
+                "state": "Colorado ",
+                "country": "United States"
+            }
+        },
+        "investigator": {
+            "role": "Principal Investigator",
+            "last_name": "Myron J Levin, M.D."
+        }
+    },
+    "sponsors": {
+        "collaborator": {
+            "agency": "GlaxoSmithKline",
+            "agency_class": "Industry"
+        },
+        "lead_sponsor": {
+            "agency": "University of Colorado, Denver",
+            "agency_class": "Other"
+        }
+    },
+    "condition": ["Adult", "Shingles", "Herpes Zoster"],
+    "enrollment": {
+        "$": "160",
+        "@type": "Anticipated"
+    },
+    "start_date": "May 2014",
+    "study_type": "Interventional",
+    "brief_title": "Comparison of a Live Herpes Zoster Vaccine and a Recombinant Vaccine in 50 - 59 and 70 - 85 Year Olds",
+    "eligibility": {
+        "gender": "Both",
+        "criteria": {
+            "textblock": "Inclusion Criteria:"
+        },
+        "maximum_age ": "85 Years",
+        "minimum_age ": "50 Years",
+        "healthy_volunteers": "Accepts Healthy Volunteers"
+    },
+    "intervention": [{
+        "description": "0.65ml, subcutaneous",
+        "arm_group_label": ["A - Live zoster vaccine", "C - Live zoster vaccine"],
+        "intervention_name": "Zostavax",
+        "intervention_type": "Biological"
+    }, {
+        "other_name": "Recombinant vaccine",
+        "description": "0.5ml, intramuscular",
+        "arm_group_label": ["B - recombinant zoster vaccine", "D - recombinant zoster vaccine"],
+        "intervention_name": "HZ/su vaccine",
+        "intervention_type": "Biological"
+    }, {
+        "other_name": "normal saline",
+        "description": "0.65ml, subcutaneous",
+        "arm_group_label": ["A - Live zoster vaccine", "C - Live zoster vaccine"],
+        "intervention_name": "Placebo",
+        "intervention_type": "Biological"
+    }],
+    "study_design": "Allocation: Randomized, Endpoint Classification: Pharmacodynamics Study, Intervention Model: Parallel Assignment, Masking: Single Blind(Subject), Primary Purpose: Basic Science ",
+    "brief_summary": {
+        "textblock": "This study will compare the two vaccines that have been developed to prevent and/or lessen..."
+    },
+    "other_outcome": {
+        "measure": "Unsolicited adverse events ",
+        "time_frame": "Within 30 days of each vaccination",
+        "safety_issue": "Yes"
+    },
+    "is_section_801": "No",
+    "number_of_arms": "4",
+    "official_title": "A Comparison of the Immunogenicity and Descriptive Safety of a Live Attenuated Herpes Zoster Vaccine and the GSK Herpes Zoster Recombinant HZ / su Candidate Vaccine in 50 - 59 Year Old and 70 - 85 Year Old Vaccine Recipients ",
+    "overall_status": "Recruiting",
+    "oversight_info": {
+        "has_dmc ": "No ",
+        "authority": ["United States: Food and Drug Administration", "United States: Institutional Review Board"]
+    },
+    "completion_date": {
+        "$": "December 2019",
+        "@type": "Anticipated"
+    },
+    "overall_contact": {
+        "email": "nancy.lang@ucdenver.edu",
+        "phone": "303-724-2454",
+        "last_name": "Nancy Lang, BSN"
+    },
+    "primary_outcome": {
+        "measure": "Interferon gamma/ Interleukin 2 (IFNg/IL2) dual color fluorospot number",
+        "time_frame": "Measured up to Day 730",
+        "safety_issue": "No"
+    },
+    "required_header": {
+        "url": "https://clinicaltrials.gov/show/NCT02114333",
+        "link_text": "Link to the current ClinicalTrials.gov record.",
+        "download_date": "ClinicalTrials.gov processed this data on December 07, 2015"
+    },
+    "condition_browse": {
+        "mesh_term": "Herpes Zoster"
+    },
+    "is_fda_regulated": "Yes",
+    "lastchanged_date": "June 8, 2015",
+    "overall_official": {
+        "role": "Principal Investigator",
+        "last_name": "Myron J Levin, M.D.",
+        "affiliation": "University of Colorado School of Medicine"
+    },
+    "responsible_party": {
+        "responsible_party_type": "Sponsor"
+    },
+    "secondary_outcome": {
+        "measure": "glycoprotein-based enzyme-linked immunosorbent assay (gpELISA)",
+        "time_frame": "Measured up to Day 730",
+        "safety_issue": "No"
+    },
+    "verification_date": "June 2015",
+    "firstreceived_date": "April 11, 2014",
+    "location_countries": {
+        "country": "United States"
+    },
+    "has_expanded_access": "No",
+    "primary_completion_date": {
+        "$": "February 2016",
+        "@type": "Anticipated"
+    }
+}

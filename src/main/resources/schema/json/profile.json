@@ -1,0 +1,527 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "phase": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "id_info": {
+      "type": "object",
+      "properties": {
+        "nct_id": {
+          "type": "string"
+        },
+        "org_study_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nct_id",
+        "org_study_id"
+      ]
+    },
+    "keyword": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email",
+            "phone",
+            "last_name"
+          ]
+        },
+        "facility": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "zip": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "zip",
+                "city",
+                "state",
+                "country"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "address"
+          ]
+        },
+        "investigator": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "role",
+            "last_name"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "contact",
+        "facility",
+        "investigator"
+      ]
+    },
+    "sponsors": {
+      "type": "object",
+      "properties": {
+        "collaborator": {
+          "type": "object",
+          "properties": {
+            "agency": {
+              "type": "string"
+            },
+            "agency_class": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "agency",
+            "agency_class"
+          ]
+        },
+        "lead_sponsor": {
+          "type": "object",
+          "properties": {
+            "agency": {
+              "type": "string"
+            },
+            "agency_class": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "agency",
+            "agency_class"
+          ]
+        }
+      },
+      "required": [
+        "collaborator",
+        "lead_sponsor"
+      ]
+    },
+    "condition": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "enrollment": {
+      "type": "object",
+      "properties": {
+        "$": {
+          "type": "string"
+        },
+        "@type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "$",
+        "@type"
+      ]
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "study_type": {
+      "type": "string"
+    },
+    "brief_title": {
+      "type": "string"
+    },
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "gender": {
+          "type": "string"
+        },
+        "criteria": {
+          "type": "object",
+          "properties": {
+            "textblock": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "textblock"
+          ]
+        },
+        "maximum_age ": {
+          "type": "string"
+        },
+        "minimum_age ": {
+          "type": "string"
+        },
+        "healthy_volunteers": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gender",
+        "criteria",
+        "maximum_age ",
+        "minimum_age ",
+        "healthy_volunteers"
+      ]
+    },
+    "intervention": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "other_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "arm_group_label": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "intervention_name": {
+            "type": "string"
+          },
+          "intervention_type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "other_name",
+          "description",
+          "arm_group_label",
+          "intervention_name",
+          "intervention_type"
+        ]
+      }
+    },
+    "study_design": {
+      "type": "string"
+    },
+    "brief_summary": {
+      "type": "object",
+      "properties": {
+        "textblock": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "textblock"
+      ]
+    },
+    "other_outcome": {
+      "type": "object",
+      "properties": {
+        "measure": {
+          "type": "string"
+        },
+        "time_frame": {
+          "type": "string"
+        },
+        "safety_issue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "measure",
+        "time_frame",
+        "safety_issue"
+      ]
+    },
+    "is_section_801": {
+      "type": "string"
+    },
+    "number_of_arms": {
+      "type": "string"
+    },
+    "official_title": {
+      "type": "string"
+    },
+    "overall_status": {
+      "type": "string"
+    },
+    "oversight_info": {
+      "type": "object",
+      "properties": {
+        "has_dmc ": {
+          "type": "string"
+        },
+        "authority": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "has_dmc ",
+        "authority"
+      ]
+    },
+    "completion_date": {
+      "type": "object",
+      "properties": {
+        "$": {
+          "type": "string"
+        },
+        "@type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "$",
+        "@type"
+      ]
+    },
+    "overall_contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "phone",
+        "last_name"
+      ]
+    },
+    "primary_outcome": {
+      "type": "object",
+      "properties": {
+        "measure": {
+          "type": "string"
+        },
+        "time_frame": {
+          "type": "string"
+        },
+        "safety_issue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "measure",
+        "time_frame",
+        "safety_issue"
+      ]
+    },
+    "required_header": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "link_text": {
+          "type": "string"
+        },
+        "download_date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "link_text",
+        "download_date"
+      ]
+    },
+    "condition_browse": {
+      "type": "object",
+      "properties": {
+        "mesh_term": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "mesh_term"
+      ]
+    },
+    "is_fda_regulated": {
+      "type": "string"
+    },
+    "lastchanged_date": {
+      "type": "string"
+    },
+    "overall_official": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "affiliation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "last_name",
+        "affiliation"
+      ]
+    },
+    "responsible_party": {
+      "type": "object",
+      "properties": {
+        "responsible_party_type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "responsible_party_type"
+      ]
+    },
+    "secondary_outcome": {
+      "type": "object",
+      "properties": {
+        "measure": {
+          "type": "string"
+        },
+        "time_frame": {
+          "type": "string"
+        },
+        "safety_issue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "measure",
+        "time_frame",
+        "safety_issue"
+      ]
+    },
+    "verification_date": {
+      "type": "string"
+    },
+    "firstreceived_date": {
+      "type": "string"
+    },
+    "location_countries": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "country"
+      ]
+    },
+    "has_expanded_access": {
+      "type": "string"
+    },
+    "primary_completion_date": {
+      "type": "object",
+      "properties": {
+        "$": {
+          "type": "string"
+        },
+        "@type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "$",
+        "@type"
+      ]
+    }
+  },
+  "required": [
+    "phase",
+    "source",
+    "id_info",
+    "keyword",
+    "location",
+    "sponsors",
+    "condition",
+    "enrollment",
+    "start_date",
+    "study_type",
+    "brief_title",
+    "eligibility",
+    "intervention",
+    "study_design",
+    "brief_summary",
+    "other_outcome",
+    "is_section_801",
+    "number_of_arms",
+    "official_title",
+    "overall_status",
+    "oversight_info",
+    "completion_date",
+    "overall_contact",
+    "primary_outcome",
+    "required_header",
+    "condition_browse",
+    "is_fda_regulated",
+    "lastchanged_date",
+    "overall_official",
+    "responsible_party",
+    "secondary_outcome",
+    "verification_date",
+    "firstreceived_date",
+    "location_countries",
+    "has_expanded_access",
+    "primary_completion_date"
+  ]
+}
